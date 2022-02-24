@@ -33,15 +33,15 @@ export default Header;
 const Section = styled.section`
 position:relative;
 
-
 .navImage{
-    width:100vw;
+    
+    height:100%;
     overflow:hidden;
-        img{
+    
+        img{ 
             width:100%;
-            height:100vh;
-            object-fit:cover;
-            
+            height:100%;
+            object-fit:contain;
     }
 }
 .content{
