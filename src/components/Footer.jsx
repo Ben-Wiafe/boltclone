@@ -194,7 +194,7 @@ const Section = styled.footer`
       }
     }
     .courier {
-      width: 159px;
+      width: 200px;
       margin-top: 12px;
       margin-left: -4rem;
       a {
