@@ -69,7 +69,8 @@ const Section = styled.section`
       img {
        max-width: 100%;
        height:auto;
-       object-fit:cover;  
+       object-fit:cover;
+  
       }
       h1 {
         position: relative;
