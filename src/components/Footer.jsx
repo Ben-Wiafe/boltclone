@@ -11,180 +11,132 @@ import styled from "styled-components";
 import dropdown from "../assets/angle-up-down.svg";
 
 function Footer() {
-    return ( <
-        Section >
-        <
-        div className = "boltfood" >
-        <
-        img src = { boltFood }
-        alt = "Bolt Food"
-        height = "40" / >
-        <
-        /div> <
-        div className = "container" >
-        <
-        div className = "footerStore" >
-        <
-        a href = "#" >
-        <
-        img src = { play }
-        alt = " "
-        width = "150"
-        height = "50" / >
-        <
-        /a> <
-        a href = "#" >
-        <
-        img src = { ios }
-        alt = " "
-        width = "150"
-        height = "50" / >
-        <
-        /a> <
-        a href = "#" >
-        <
-        img src = { huawei }
-        alt = " "
-        width = "150"
-        height = "50" / >
-        <
-        /a> <
-        /div> <
-        fieldset className = "options" >
-        <
-        legend > Language < /legend>
-
-        <
-        select id = "language-mobile" >
-        <
-        option value = "az-AZ" > Azərbaycanca < /option> <
-        option value = "cs-CZ" > Čeština < /option> <
-        option value = "da-DK" > Dansk < /option> <
-        option value = "et-EE" > Eesti < /option> <
-        option selected = "English"
-        value = "en-US" >
-        English <
-        /option> <
-        option value = "hr-HR" > Hrvatski < /option> <
-        option value = "lv-LV" > Latviešu < /option> <
-        option value = "lt-LT" > Lietuvių < /option> <
-        option value = "hu-HU" > Magyar < /option> <
-        option value = "nl-NL" > Nederlands < /option> <
-        option value = "no-NO" > Norsk < /option> <
-        option value = "pl-PL" > Polski < /option> <
-        option value = "pt-PT" > Português < /option> <
-        option value = "ro-RO" > Română < /option> <
-        option value = "sk-SK" > Slovenčina < /option> <
-        option value = "sv-SE" > Svenska < /option> <
-        option value = "el-GR" > Ελληνικά < /option> <
-        option value = "ru-RU" > Русский < /option> <
-        option value = "uk-UA" > Українська < /option> <
-        option value = "ka-GE" > ქართული < /option> <
-        /select> <
-        /fieldset> <
-        div className = "courier" >
-        <
-        a href = "#" >
-        <
-        h4 > Courier Sign - up < /h4> <
-        /a> <
-        a href = "#" >
-        <
-        h4 > Restaurant Sign - up < /h4> <
-        /a> <
-        a href = "#" >
-        <
-        h4 > Careers Sign - up < /h4> <
-        /a> <
-        /div> <
-        div className = "enquiry" >
-        <
-        a href = "#" >
-        <
-        p > Support & FAQ < /p> <
-        /a> <
-        a href = "#" >
-        <
-        p > Press < /p> <
-        /a> <
-        a href = "#" >
-        <
-        p > Blog < /p> <
-        /a> <
-        a href = "#" >
-        <
-        p > Contacts < /p> <
-        /a> <
-        a href = "#" >
-        <
-        p > Legal < /p> <
-        /a> <
-        /div> <
-        div className = "socials" >
-        <
-        a href = "#" > { " " } <
-        img src = { drop }
-        alt = "facebook" / >
-        <
-        /a> <
-        a href = "#" > { " " } <
-        img src = { inst }
-        alt = "instagram" / >
-        <
-        /a> <
-        a href = "#" > { " " } <
-        img src = { twit }
-        alt = "twitter" / >
-        <
-        /a> <
-        div className = "options" >
-        <
-        fieldset className = "options" >
-        <
-        legend > Language < /legend>
-
-        <
-        select id = "language-mobile" >
-        <
-        option value = "az-AZ" > Azərbaycanca < /option> <
-        option value = "cs-CZ" > Čeština < /option> <
-        option value = "da-DK" > Dansk < /option> <
-        option value = "et-EE" > Eesti < /option> <
-        option selected = "English"
-        value = "en-US" >
-        English <
-        /option> <
-        option value = "hr-HR" > Hrvatski < /option> <
-        option value = "lv-LV" > Latviešu < /option> <
-        option value = "lt-LT" > Lietuvių < /option> <
-        option value = "hu-HU" > Magyar < /option> <
-        option value = "nl-NL" > Nederlands < /option> <
-        option value = "no-NO" > Norsk < /option> <
-        option value = "pl-PL" > Polski < /option> <
-        option value = "pt-PT" > Português < /option> <
-        option value = "ro-RO" > Română < /option> <
-        option value = "sk-SK" > Slovenčina < /option> <
-        option value = "sv-SE" > Svenska < /option> <
-        option value = "el-GR" > Ελληνικά < /option> <
-        option value = "ru-RU" > Русский < /option> <
-        option value = "uk-UA" > Українська < /option> <
-        option value = "ka-GE" > ქართული < /option> <
-        /select> <
-        /fieldset> <
-        /div> <
-        /div> <
-        /div> <
-        div className = "boltTech" >
-        <
-        p > ©2022 Bolt Technology OÜ < /p> <
-        /div> <
-        /Section>
-    );
+  return (
+    <Section>
+      <div className="boltfood">
+        <img src={boltFood} alt="Bolt Food" height="40" />
+      </div>{" "}
+      <div className="container">
+        <div className="footerStore">
+          <a href="#">
+            <img src={play} alt=" " width="150" height="50" />
+          </a>{" "}
+          <a href="#">
+            <img src={ios} alt=" " width="150" height="50" />
+          </a>{" "}
+          <a href="#">
+            <img src={huawei} alt=" " width="150" height="50" />
+          </a>{" "}
+        </div>{" "}
+        <fieldset className="options">
+          <legend> Language </legend>
+          <select id="language-mobile">
+            <option value="az-AZ"> Azərbaycanca </option>{" "}
+            <option value="cs-CZ"> Čeština </option>{" "}
+            <option value="da-DK"> Dansk </option>{" "}
+            <option value="et-EE"> Eesti </option>{" "}
+            <option selected="English" value="en-US">
+              English{" "}
+            </option>{" "}
+            <option value="hr-HR"> Hrvatski </option>{" "}
+            <option value="lv-LV"> Latviešu </option>{" "}
+            <option value="lt-LT"> Lietuvių </option>{" "}
+            <option value="hu-HU"> Magyar </option>{" "}
+            <option value="nl-NL"> Nederlands </option>{" "}
+            <option value="no-NO"> Norsk </option>{" "}
+            <option value="pl-PL"> Polski </option>{" "}
+            <option value="pt-PT"> Português </option>{" "}
+            <option value="ro-RO"> Română </option>{" "}
+            <option value="sk-SK"> Slovenčina </option>{" "}
+            <option value="sv-SE"> Svenska </option>{" "}
+            <option value="el-GR"> Ελληνικά </option>{" "}
+            <option value="ru-RU"> Русский </option>{" "}
+            <option value="uk-UA"> Українська </option>{" "}
+            <option value="ka-GE"> ქართული </option>{" "}
+          </select>{" "}
+        </fieldset>{" "}
+        <div className="courier">
+          <a href="#">
+            <h4> Courier Sign - up </h4>{" "}
+          </a>{" "}
+          <a href="#">
+            <h4> Restaurant Sign - up </h4>{" "}
+          </a>{" "}
+          <a href="#">
+            <h4> Careers Sign - up </h4>{" "}
+          </a>{" "}
+        </div>{" "}
+        <div className="enquiry">
+          <a href="#">
+            <p> Support & FAQ </p>{" "}
+          </a>{" "}
+          <a href="#">
+            <p> Press </p>{" "}
+          </a>{" "}
+          <a href="#">
+            <p> Blog </p>{" "}
+          </a>{" "}
+          <a href="#">
+            <p> Contacts </p>{" "}
+          </a>{" "}
+          <a href="#">
+            <p> Legal </p>{" "}
+          </a>{" "}
+        </div>{" "}
+        <div className="socials">
+          <a href="#">
+            {" "}
+            <img src={drop} alt="facebook" />
+          </a>{" "}
+          <a href="#">
+            {" "}
+            <img src={inst} alt="instagram" />
+          </a>{" "}
+          <a href="#">
+            {" "}
+            <img src={twit} alt="twitter" />
+          </a>{" "}
+          <div className="options">
+            <fieldset className="options">
+              <legend> Language </legend>
+              <select id="language-mobile">
+                <option value="az-AZ"> Azərbaycanca </option>{" "}
+                <option value="cs-CZ"> Čeština </option>{" "}
+                <option value="da-DK"> Dansk </option>{" "}
+                <option value="et-EE"> Eesti </option>{" "}
+                <option selected="English" value="en-US">
+                  English{" "}
+                </option>{" "}
+                <option value="hr-HR"> Hrvatski </option>{" "}
+                <option value="lv-LV"> Latviešu </option>{" "}
+                <option value="lt-LT"> Lietuvių </option>{" "}
+                <option value="hu-HU"> Magyar </option>{" "}
+                <option value="nl-NL"> Nederlands </option>{" "}
+                <option value="no-NO"> Norsk </option>{" "}
+                <option value="pl-PL"> Polski </option>{" "}
+                <option value="pt-PT"> Português </option>{" "}
+                <option value="ro-RO"> Română </option>{" "}
+                <option value="sk-SK"> Slovenčina </option>{" "}
+                <option value="sv-SE"> Svenska </option>{" "}
+                <option value="el-GR"> Ελληνικά </option>{" "}
+                <option value="ru-RU"> Русский </option>{" "}
+                <option value="uk-UA"> Українська </option>{" "}
+                <option value="ka-GE"> ქართული </option>{" "}
+              </select>{" "}
+            </fieldset>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
+      <div className="boltTech">
+        <p> ©2022 Bolt Technology OÜ </p>{" "}
+      </div>{" "}
+    </Section>
+  );
 }
 
 export default Footer;
 
-const Section = styled.footer `
+const Section = styled.footer`
   background:#F4F4F6;
   padding-top: 3rem;
   position: relative;
