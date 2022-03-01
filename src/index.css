@@ -7,9 +7,21 @@
 }
 body {
   margin: 0;
- 
 }
 
-code {
-  font-family:Euclid Circular A Light, sans-serif;
+
+@font-face {
+  font-family: 'Euclid Circular B SemiBold';
+  font-weight: 600;
+  src: local('Euclid'), url(../src/fonts/Euclid\ Circular\ B\ SemiBold.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'Euclid Circular B Regular';
+  font-weight: normal;
+  src: local('Euclid'), url(../src/fonts/Euclid\ Circular\ B\ Regular.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'Euclid Circular B Bold ';
+  font-weight: 800;
+  src: local('Euclid'), url(../src/fonts/Euclid\ Circular\ B\ Bold.ttf) format('opentype');
 }

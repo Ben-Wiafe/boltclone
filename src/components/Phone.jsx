@@ -5,8 +5,8 @@ function Phone() {
   return (
   <Section>
     <div className='container'>
-        <img src={phon} alt='phone' width='50%'/>
-        <h1>Discover, order, and track in the app</h1>
+        <img src={phon} alt='phone'/>
+        <h3>Discover, order, and track in the app</h3>
     </div>
 
   </Section>
@@ -16,29 +16,30 @@ function Phone() {
 export default Phone;
 
 const Section = styled.section`
-margin-top:-3rem;
-position:relative;
-overflow:hidden;
+margin:auto;
+width:847px;
 
     .container{
-        text-align:center;
-        margin:5rem;
-        ${'' /* border:1px solid black; */}
+        min-height:519px;
+        margin-top:4rem;
+        position:relative;
         img{
-            width:60%;
-            height:100%;
             object-fit:cover;
-        }
-        h1{
-            ${'' /* border:1px solid black; */}
+            max-width:100%;
+            height:auto;
+        }   
+            h3{
             position:absolute;
-            top:10rem;
-            left:4rem;
-            letter-spacing:0.3rem;
-            width:50%;
+            top:4rem;
+            left:1.25rem;
+            max-width:30rem;
+            text-align:left;
+            margin:auto;
+            line-height:3.7rem;
             font-size:3rem;
             font-weight:100;
         }
+        
 
     }
     @media screen and (max-width:650px ){
@@ -47,6 +48,7 @@ overflow:hidden;
         width:100%;
         margin-left:0rem;
         border:none;
+        
         img{
             object-fit:contain;
             height:100%;

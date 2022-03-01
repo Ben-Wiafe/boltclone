@@ -1,28 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import navImg from "../assets/hero-image.jpeg";
-import ios from "../assets/pngwing.com-removebg-preview.png";
-import android from "../assets/android-removebg-preview.png";
+import navImg from "../assets/hero-image.jpg";
+import ios from "../assets/app-store.svg";
+import boltfood from "../assets/bolt-food-logo.svg";
+import android from "../assets/play-store.svg";
 
 function Header() {
   return (
     <Section>
-      <div className="navImage">
-        <img src={navImg} alt="" />
-      </div>
       <div className="content">
-        <h1>
-          {" "}
-          <span>Bolt</span> Food
-        </h1>
-        <p>The restaurants and takeaways you love, delivered fast</p>
-        <div className="buttons">
-          <img src={android} alt="Google play store" />
-          <img src={ios} alt="Apple store" />
+        <div className="boltf">
+          <img src={boltfood} alt="bolt food" />
+        </div>
+        <div className="heroText">
+        <h3>The restaurants and takeaways you love, delivered fast</h3>
+        </div>
+        <div className="downloadStore">
+          <img src={android} alt="Google playstore" />
+          <img src={ios} alt="Google playstore" />
         </div>
       </div>
       <div className="download">
-        <button>Download Now</button>
+      <h3>The restaurants and takeaways you love, delivered fast</h3>
+       <a href="https://boltfood.onelink.me/gEr4/googleplayweb001">Download Now</a> 
       </div>
     </Section>
   );
@@ -32,190 +32,145 @@ export default Header;
 
 const Section = styled.section`
 position:relative;
-
-.navImage{
+  .content{
+    background: url(${navImg});
+    margin: auto;
+    overflow: hidden;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 86vw;
+    max-width:100%;
+    min-height: 260px;
+    max-height: 981px;    
     
-    height:100%;
-    overflow:hidden;
     
-        img{ 
-            width:100%;
-            height:100%;
-            object-fit:contain;
-    }
-}
-.content{
-    position:absolute;
-    top:1rem;
-    left:23rem;
-    display:flex;
-    gap:1.3rem;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    h1{
-        font-size:4rem;
-        font-weight:bold;
-        color: #2F313F;
-        letter-spacing:0.1rem;
-    }
-    span{
-        color:#34d186;
-    }
-   
-    p{
-        font-size:2rem;
-        color:#2F313F;
-        letter-spacing:0.05rem;
-        font-weight:600;
-        width:80%;
-        margin-bottom:0rem;
-
-    }
-    .buttons{
+    .boltf{
         display:flex;
-        align-items:center;
         justify-content:center;
-        marging:0rem 10rem 20rem;
-        
+        padding-top:2rem;
+        margin-bottom:1rem;
         img{
-            width:10rem;
-            object-fit:contain;
-            
+            height:3.8rem;
         }
     }
+    .heroText{
+        margin-top:1.7rem;
+        margin-bottom:1rem;
+        text-align:center;
+        padding-horizontal:1rem;
+      
+        h3{
+        margin:auto;
+        line-height:2.75rem;
+        max-width:45rem;
+        font-family:sans-serif;
+        font-weight:600;
+        font-size:2.2rem;
+    }
+    }
     
+   .downloadStore{
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       img{
+          margin:10px;
+           width:150px;
+           object-fit:contain;
+       }
+   }
 }
 .download{
-        display:none;
-    }
-@media screen and (max-width:650px ){
-    
-    .navImage{
-        margin-top:-2rem;
-        
-        img{
-            object-fit:contain;
-            width:100%;
-            height:100%;
-
-        }
-    }
-    .content{
-        left:0rem;
-        overflow:hidden;
-        p{
-          width:95%;
-          font-weight:100;
-          padding-top:10px;
-          font-size:1.5rem;
-          letter-spacing:0.1rem;
-          margin-top:20rem;  
-          
-        }
-        
-        .buttons{
-            display:none;
-        }
-        h1{
-            font-size:2.7rem;
-            letter-spacing:0rem;
-
-            
-        }
-    }
-    .download{
-            display:block;
-            width:100%;
-            margin:3em 1.5rem;;
-            margin-bottom:6rem;
-            button{
-                width:90%;
-                background:#34d186;
-                border:none;
-                text-align:center;
-                border-radius:13rem;
-                padding:1.1rem 3rem;
-                color:white;
-                font-size:1.1rem;
-                text-transform:uppercase;
-
-            }
-        }
+    display:none;
 }
-@media screen and (min-width:650px ) and (max-width:940px){
-    .download{
-            display:block;
-            width:49%;
-            margin-left:15rem;
-            margin-bottom:2rem;
-            button{
-                width:90%;
-                background:#34d186;
-                border:none;
-                text-align:center;
-                border-radius:13rem;
-                padding:1.1rem 3rem;
-                color:white;
-                font-size:1.1rem;
-                text-transform:uppercase;
+
+@media screen and (max-width:650px ){
+    .content{
+        
+        height:68vw;
+        .boltf{
+            img{
+                height:2.5rem;
             }
         }
-    
-    .navImage{
-        
-        img{
-            object-fit:cover;
-            width:100%;
-            
-
+        .heroText{
+            display:none;
+        }
+        .downloadStore{
+            display:none;
         }
     }
-    .content{
-        left:3rem;
-        text-align:center;
-        overflow:hidden;
-        p{
-         text-align:center;
-         width:100%;
-          font-weight:100;
-          padding-top:1rem;
-          padding-left:19px;
-          font-size:1.8rem;
-          letter-spacing:0rem;
-          margin-top:7rem;  
-          
-        }
-
-        h1{
-            font-size:2.9rem;
-            letter-spacing:0rem;
-            margin-bottom:27rem;
-        }
-        .download{
-            display:block;
-            width:100%;
-            margin:3em 1.5rem;;
-            margin-bottom:6rem;
-
-            button{
-                width:90%;
-                background:#34d186;
-                border:none;
+    .download{
+ display:block;
+ text-align:center;
+    line-height:2.3rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    
+    h3{
+        font-size:1.5rem;
+        font-family:sans-serif;
+        font-weight:normal;
+    }
+    a{      
+               background:#34d186;
+                font-weight:700;
                 text-align:center;
-                border-radius:13rem;
-                padding:1.1rem 3rem;
+                border-radius:3rem;
+                font-size:1rem;
+                padding:1.2rem 7rem;
+                line-height:4.5rem;
                 color:white;
-                font-size:1.1rem;
+                letter-spacing:.078125rem;
+                text-decoration:none;
                 text-transform:uppercase;
             }
+}
+    }
+    
+
+@media screen and (min-width:650px ) and (max-width:940px){
+    .content{
+        height:68vw;
+        .boltf{
+            img{
+                height:2.5rem;
+            }
         }
-        
-        
-        .buttons{
+        .heroText{
+            display:none;
+        }
+        .downloadStore{
             display:none;
         }
         
+        
+    }
+    .download{
+ display:block;
+ text-align:center;
+    line-height:2.5rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    h3{
+        font-size:1.6rem;
+        font-family:sans-serif;
+        font-weight:normal;
+    }
+    a{      
+            background:#34d186;
+                font-weight:700;
+                text-align:center;
+                border-radius:3rem;
+                font-size:1rem;
+                padding:1.2rem 4rem;
+                line-height:4rem;
+                color:white;
+                letter-spacing:.078125rem;
+                text-decoration:none;
+                text-transform:uppercase;
+            }
+}
+    }
 `;
